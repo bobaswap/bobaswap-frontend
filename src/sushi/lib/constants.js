@@ -72,7 +72,7 @@ export const supportedPools = [
   {
     pid: 12,
     lpAddresses: {
-      1: '0xce84867c3c02b05dc570d0135103d3fb9cc19433',
+      1: '0x795065dCc9f64b5614C407a6EFDC400DA6221FB0',
     },
     tokenAddresses: {
       1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
@@ -85,7 +85,7 @@ export const supportedPools = [
   {
     pid: 0,
     lpAddresses: {
-      1: '0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852',
+      1: '0x06da0fd433C1A5d7a4faa01111c044910A184553',
     },
     tokenAddresses: {
       1: '0xdac17f958d2ee523a2206206994597c13d831ec7',
@@ -98,7 +98,7 @@ export const supportedPools = [
   {
     pid: 1,
     lpAddresses: {
-      1: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+      1: '0x397FF1542f962076d0BFE58eA045FfA2d347ACa0',
     },
     tokenAddresses: {
       1: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
@@ -111,7 +111,7 @@ export const supportedPools = [
   {
     pid: 2,
     lpAddresses: {
-      1: '0xa478c2975ab1ea89e8196811f51a7b7ade33eb11',
+      1: '0xC3D03e4F041Fd4cD388c549Ee2A29a9E5075882f',
     },
     tokenAddresses: {
       1: '0x6b175474e89094c44da98b954eedeac495271d0f',
@@ -124,7 +124,7 @@ export const supportedPools = [
   {
     pid: 3,
     lpAddresses: {
-      1: '0xf80758ab42c3b07da84053fd88804bcb6baa4b5c',
+      1: '0xF1F85b2C54a2bD284B1cf4141D64fD171Bd85539',
     },
     tokenAddresses: {
       1: '0x57ab1ec28d129707052df4df418d58a2d46d5f51',
@@ -137,7 +137,7 @@ export const supportedPools = [
   {
     pid: 7,
     lpAddresses: {
-      1: '0x88d97d199b9ed37c29d846d00d443de980832a22',
+      1: '0x001b6450083e531a5a7bf310bd2c1af4247e23d4',
     },
     tokenAddresses: {
       1: '0x04fa0d235c4abf4bcf4787af4cf447de572ef828',
@@ -150,7 +150,7 @@ export const supportedPools = [
   {
     pid: 9,
     lpAddresses: {
-      1: '0xf421c3f2e695c2d4c0765379ccace8ade4a480d9',
+      1: '0xA75F7c2F025f470355515482BdE9EFA8153536A8',
     },
     tokenAddresses: {
       1: '0xba11d00c5f74255f56a5e366f4f77f5a186d7f55',
@@ -163,7 +163,7 @@ export const supportedPools = [
   {
     pid: 8,
     lpAddresses: {
-      1: '0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974',
+      1: '0xC40D16476380e4037e6b1A2594cAF6a6cc8Da967',
     },
     tokenAddresses: {
       1: '0x514910771af9ca656af840dff83e8264ecf986ca',
@@ -176,7 +176,7 @@ export const supportedPools = [
   {
     pid: 10,
     lpAddresses: {
-      1: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
+      1: '0xCb2286d9471cc185281c4f763d34A962ED212962',
     },
     tokenAddresses: {
       1: '0xd46ba6d942050d489dbd938a2c909a5d5039a161',
@@ -189,7 +189,7 @@ export const supportedPools = [
   {
     pid: 4,
     lpAddresses: {
-      1: '0xcffdded873554f362ac02f8fb1f02e5ada10516f',
+      1: '0x31503dcb60119a812fee820bb7042752019f2355',
     },
     tokenAddresses: {
       1: '0xc00e94cb662c3520282e6f5717214004a7f26888',
@@ -202,7 +202,7 @@ export const supportedPools = [
   {
     pid: 5,
     lpAddresses: {
-      1: '0xab3f9bf1d81ddb224a2014e98b238638824bcf20',
+      1: '0x5E63360E891BD60C69445970256C260b0A6A54c6',
     },
     tokenAddresses: {
       1: '0x80fb784b7ed66730e8b1dbd9820afd29931aab03',
@@ -215,7 +215,7 @@ export const supportedPools = [
   {
     pid: 6,
     lpAddresses: {
-      1: '0x43ae24960e5534731fc831386c07755a2dc33d47',
+      1: '0xA1d7b2d891e3A1f9ef4bBC5be20630C2FEB1c470',
     },
     tokenAddresses: {
       1: '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f',
@@ -228,7 +228,7 @@ export const supportedPools = [
   {
     pid: 11,
     lpAddresses: {
-      1: '0x2fdbadf3c4d5a8666bc06645b8358ab803996e28',
+      1: '0x088ee5007C98a9677165D78dD2109AE4a3D04d0C',
     },
     tokenAddresses: {
       1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
@@ -241,7 +241,7 @@ export const supportedPools = [
   {
     pid: 13,
     lpAddresses: {
-      1: '0x8bd1661da98ebdd3bd080f0be4e6d9be8ce9858c',
+      1: '0x611cde65dea90918c0078ac0400a72b0d25b9bb1',
     },
     tokenAddresses: {
       1: '0x408e41876cccdc0f92210600ef50372656052a38',
@@ -267,7 +267,7 @@ export const supportedPools = [
   {
     pid: 15,
     lpAddresses: {
-      1: '0xcc3d1ecef1f9fd25599dbea2755019dc09db3c54',
+      1: '0x117d4288b3635021a3d612fe05a3cbf5c717fef2',
     },
     tokenAddresses: {
       1: '0x476c5E26a75bd202a9683ffD34359C0CC15be0fF',
@@ -280,7 +280,7 @@ export const supportedPools = [
   {
     pid: 16,
     lpAddresses: {
-      1: '0xa5904961f61bae7c4dd8478077556c91bf291cfd',
+      1: '0x95b54c8da12bb23f7a5f6e26c38d04acc6f81820',
     },
     tokenAddresses: {
       1: '0xaba8cac6866b83ae4eec97dd07ed254282f6ad8a',
@@ -293,7 +293,7 @@ export const supportedPools = [
   {
     pid: 17,
     lpAddresses: {
-      1: '0x3da1313ae46132a397d90d95b1424a9a7e3e0fce',
+      1: '0x58Dc5a51fE44589BEb22E8CE67720B5BC5378009',
     },
     tokenAddresses: {
       1: '0xD533a949740bb3306d119CC777fa900bA034cd52',
