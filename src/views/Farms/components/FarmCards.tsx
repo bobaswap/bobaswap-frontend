@@ -28,7 +28,7 @@ const FarmCards: React.FC = () => {
   const stakedValue = useAllStakedValue()
 
   const sushiIndex = farms.findIndex(
-    ({ tokenSymbol }) => tokenSymbol === 'SUSHI',
+    ({ tokenSymbol }) => tokenSymbol === 'BOBA',
   )
 
   const sushiPrice =
@@ -38,7 +38,6 @@ const FarmCards: React.FC = () => {
 
   const BLOCKS_PER_YEAR = new BigNumber(2336000)
   const SUSHI_PER_BLOCK = new BigNumber(1000)
-
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
       const farmWithStakedValue = {
@@ -128,14 +127,14 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
 
   return (
     <StyledCardWrapper>
-      {farm.tokenSymbol === 'SUSHI' && <StyledCardAccent />}
+      {farm.tokenSymbol === 'BOBA' && <StyledCardAccent />}
       <Card>
         <CardContent>
           <StyledContent>
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
-              <StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail>
+              <a href="https://sushiswapclassic.org/farms" target='_blank'><StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail></a>
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
