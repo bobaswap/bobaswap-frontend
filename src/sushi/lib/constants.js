@@ -69,6 +69,7 @@ export const supportedPools = [
     symbol: 'BOBA-ETH SLP',
     tokenSymbol: 'BOBA',
     icon: '🥤',
+    depositUrl:'https://exchange.sushiswapclassic.org/#/add/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2/ETH',
   },
   {
     pid: 0,
@@ -82,6 +83,7 @@ export const supportedPools = [
     symbol: 'USDT-ETH SLP',
     tokenSymbol: 'USDT',
     icon: '☕',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xdac17f958d2ee523a2206206994597c13d831ec7/ETH',
   },
   {
     pid: 1,
@@ -95,6 +97,7 @@ export const supportedPools = [
     symbol: 'USDC-ETH SLP',
     tokenSymbol: 'USDC',
     icon: '🥃',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/ETH',
   },
   {
     pid: 8,
@@ -108,6 +111,7 @@ export const supportedPools = [
     symbol: 'LINK-ETH SLP',
     tokenSymbol: 'LINK',
     icon: '🍺',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x514910771af9ca656af840dff83e8264ecf986ca/ETH',
   },
   {
     pid: 5,
@@ -121,6 +125,7 @@ export const supportedPools = [
     symbol: 'LEND-ETH SLP',
     tokenSymbol: 'LEND',
     icon: '🍷',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x80fb784b7ed66730e8b1dbd9820afd29931aab03/ETH',
   },
   {
     pid: 6,
@@ -134,6 +139,7 @@ export const supportedPools = [
     symbol: 'SNX-ETH SLP',
     tokenSymbol: 'SNX',
     icon: '🍾',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f/ETH',
   },
   {
     pid: 10,
@@ -147,6 +153,7 @@ export const supportedPools = [
     symbol: 'AMPL-ETH SLP',
     tokenSymbol: 'AMPL',
     icon: '🍸',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xd46ba6d942050d489dbd938a2c909a5d5039a161/ETH',
   },
   {
     pid: 11,
@@ -160,6 +167,7 @@ export const supportedPools = [
     symbol: 'YFI-ETH SLP',
     tokenSymbol: 'YFI',
     icon: '🍶',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/ETH',
   },
   {
     pid: 20,
@@ -173,6 +181,7 @@ export const supportedPools = [
     symbol: 'YAMV2-ETH SLP',
     tokenSymbol: 'YAMV2',
     icon: '🍹',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xAba8cAc6866B83Ae4eec97DD07ED254282f6aD8A/ETH',
   },
   {
     pid: 21,
@@ -186,6 +195,7 @@ export const supportedPools = [
     symbol: 'SUSHI-ETH SLP',
     tokenSymbol: 'SUSHI',
     icon: '🥛',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/ETH',
   },
   {
     pid: 24,
@@ -199,6 +209,7 @@ export const supportedPools = [
     symbol: 'BUSD-ETH SLP',
     tokenSymbol: 'BUSD',
     icon: '🥣',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x4Fabb145d64652a948d72533023f6E7A623C7C53/ETH',
   },
   {
     pid: 22,
@@ -212,6 +223,7 @@ export const supportedPools = [
     symbol: 'FARM SLP',
     tokenSymbol: 'FARM',
     icon: '🍯',
+    depositUrl: 'https://etherscan.io/address/0xa0246c9032bC3A600820415aE600c6388619A14D',
   },
   {
     pid: 25,
@@ -225,6 +237,7 @@ export const supportedPools = [
     symbol: 'ARPA SLP',
     tokenSymbol: 'ARPA',
     icon: '🍰',
+    depositUrl: 'https://etherscan.io/address/0xba50933c268f567bdc86e1ac131be072c6b0b71a',
   },
   {
     pid: 26,
@@ -238,6 +251,7 @@ export const supportedPools = [
     symbol: 'YFII SLP',
     tokenSymbol: 'YFII',
     icon: '🍩',
+    depositUrl: 'https://etherscan.io/address/0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83',
   },
   {
     pid: 27,
@@ -251,6 +265,7 @@ export const supportedPools = [
     symbol: 'YFI SLP',
     tokenSymbol: 'YFI',
     icon: '🍮',
+    depositUrl: 'https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
   },
   {
     pid: 28,
@@ -264,6 +279,7 @@ export const supportedPools = [
     symbol: 'OKB SLP',
     tokenSymbol: 'OKB',
     icon: '🍭',
+    depositUrl: 'https://etherscan.io/address/0x75231f58b43240c9718dd58b4967c5114342a86c',
   },
   {
     pid: 29,
@@ -277,6 +293,7 @@ export const supportedPools = [
     symbol: 'SWRV SLP',
     tokenSymbol: 'SWRV',
     icon: '🍫',
+    depositUrl: 'https://etherscan.io/address/0xb8baa0e4287890a5f79863ab62b7f175cecbd433',
   },
   
   
