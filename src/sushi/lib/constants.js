@@ -58,9 +58,9 @@ SLP Address on mainnet for reference
 
 export const supportedPools = [
   {
-    pid: 110,
+    pid: 16,
     lpAddresses: {
-      1: '0x795065dCc9f64b5614C407a6EFDC400DA6221FB0',
+      1: '0x6ba975118545f1bcbda6376d08417494ef9a6e16',
     },
     tokenAddresses: {
       1: '0x2D480Bb31d4796A11D9a50eAECaBb36ffd42Bc63',
