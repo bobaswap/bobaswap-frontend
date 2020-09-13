@@ -6,22 +6,22 @@ const Nav: React.FC = () => {
     <StyledNav>
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd#code"
+        href="https://etherscan.io/address/0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7#code"
       >
         Token Contract
       </StyledLink>
       <StyledLink
         target="_blank"
-        href="https://etherscan.io/address/0xc2edad668740f1aa35e4d8f227fb8e17dca888cd#code"
+        href="https://etherscan.io/address/0x6a1c61D4FCfD36Ca908C8090418cf2B292951f8A#code"
       >
         Master Contract
       </StyledLink>
-      <StyledLink target="_blank" href="todo">
+      {/* <StyledLink target="_blank" href="todo">
         Telegram
-      </StyledLink>
-      <StyledLink target="_blank" href="https://github.com/bobaswap">
+      </StyledLink> */}
+      {/* <StyledLink target="_blank" href="https://github.com/bobaswap">
         Github
-      </StyledLink>
+      </StyledLink> */}
       <StyledLink target="_blank" href="https://twitter.com/BobaSwap">
         Twitter
       </StyledLink>
