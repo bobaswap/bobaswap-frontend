@@ -27,7 +27,8 @@
     "build": "CI= GENERATE_SOURCEMAP=false react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy": "yarn build && cp ./build/index.html ./build/200.html && surge ./build sushiswap.org"
+    "deploy": "yarn build && cp ./build/index.html ./build/200.html && surge ./build sushiswap.org",
+    "prod": "yarn build && serve -s build"
   },
   "eslintConfig": {
     "extends": "react-app"
