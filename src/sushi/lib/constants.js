@@ -40,10 +40,10 @@ export const INTEGERS = {
 
 export const contractAddresses = {
   boba: {
-    1: '0x2D480Bb31d4796A11D9a50eAECaBb36ffd42Bc63',
+    1: '0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7',
   },
   masterChef: {
-    1: '0x3f2a6f23Cdc31D9F1f8b19a4f58b6dF69C560b76',
+    1: '0x6a1c61D4FCfD36Ca908C8090418cf2B292951f8A',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -63,13 +63,13 @@ export const supportedPools = [
       1: '0x6ba975118545f1bcbda6376d08417494ef9a6e16',
     },
     tokenAddresses: {
-      1: '0x2D480Bb31d4796A11D9a50eAECaBb36ffd42Bc63',
+      1: '0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7',
     },
     name: 'Boba Party!',
     symbol: 'BOBA-ETH SLP',
     tokenSymbol: 'BOBA',
     icon: '🥤',
-    depositUrl:'https://exchange.sushiswapclassic.org/#/add/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2/ETH',
+    depositUrl:'https://exchange.sushiswapclassic.org/#/add/0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7/ETH',
     isPair : true,
   },
   {

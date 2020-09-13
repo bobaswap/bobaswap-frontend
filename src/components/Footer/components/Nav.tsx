@@ -16,7 +16,7 @@ const Nav: React.FC = () => {
       >
         Master Contract
       </StyledLink>
-      <StyledLink target="_blank" href="https://discord.gg/hJ2p555">
+      <StyledLink target="_blank" href="todo">
         Telegram
       </StyledLink>
       <StyledLink target="_blank" href="https://github.com/bobaswap">
