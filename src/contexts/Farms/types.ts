@@ -13,6 +13,7 @@ export interface Farm {
   id: string
   tokenSymbol: string
   depositUrl: string
+  isPair : boolean
 }
 
 export interface FarmsContext {

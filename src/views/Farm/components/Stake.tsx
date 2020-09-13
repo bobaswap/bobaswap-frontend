@@ -23,17 +23,19 @@ import WithdrawModal from './WithdrawModal'
 
 interface StakeProps {
   lpContract: Contract
+  tokenContract: Contract
   pid: number
   tokenName: string
+  isPair:boolean
 }
 
-const Stake: React.FC<StakeProps> = ({ lpContract, pid, tokenName }) => {
+const Stake: React.FC<StakeProps> = ({ lpContract, tokenContract, pid, tokenName ,isPair}) => {
   const [requestedApproval, setRequestedApproval] = useState(false)
 
   const allowance = useAllowance(lpContract)
   const { onApprove } = useApprove(lpContract)
 
-  const tokenBalance = useTokenBalance(lpContract.options.address)
+  const tokenBalance = useTokenBalance(isPair?lpContract.options.address:tokenContract.options.address)
   const stakedBalance = useStakedBalance(pid)
 
   const { onStake } = useStake(pid)

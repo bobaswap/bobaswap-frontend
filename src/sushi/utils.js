@@ -43,7 +43,8 @@ export const getFarms = (sushi) => {
           tokenContract,
           lpAddress,
           lpContract,
-          depositUrl
+          depositUrl,
+          isPair,
         }) => ({
           pid,
           id: symbol,
@@ -57,7 +58,8 @@ export const getFarms = (sushi) => {
           earnToken: 'BOBA',
           earnTokenAddress: sushi.contracts.sushi.options.address,
           icon,
-          depositUrl
+          depositUrl,
+          isPair,
         }),
       )
     : []
@@ -81,16 +83,24 @@ export const getTotalLPWethValue = async (
   lpContract,
   tokenContract,
   pid,
-) => {
+  isPair,
+) => {  
   // Get balance of the token address
   const tokenAmountWholeLP = await tokenContract.methods
     .balanceOf(lpContract.options.address)
     .call()
   const tokenDecimals = await tokenContract.methods.decimals().call()
   // Get the share of lpContract that masterChefContract owns
-  const balance = await lpContract.methods
+  let balance=0
+  if(isPair){
+    balance = await lpContract.methods
     .balanceOf(masterChefContract.options.address)
     .call()
+  }else{
+    balance = await tokenContract.methods
+    .balanceOf(masterChefContract.options.address)
+    .call()
+  }
   // Convert that into the portion of total lpContract = p1
   const totalSupply = await lpContract.methods.totalSupply().call()
   // Get total weth value for the lpContract = w1
@@ -115,6 +125,8 @@ export const getTotalLPWethValue = async (
     totalWethValue: totalLpWethValue.div(new BigNumber(10).pow(18)),
     tokenPriceInWeth: wethAmount.div(tokenAmount),
     poolWeight: await getPoolWeight(masterChefContract, pid),
+    balance: new BigNumber(balance).div(new BigNumber(10).pow(18)),
+    isPair,
   }
 }
 

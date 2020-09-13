@@ -35,7 +35,6 @@ const FarmCards: React.FC = () => {
     sushiIndex >= 0 && stakedValue[sushiIndex]
       ? stakedValue[sushiIndex].tokenPriceInWeth
       : new BigNumber(0)
-
   const BLOCKS_PER_YEAR = new BigNumber(2336000)
   const SUSHI_PER_BLOCK = new BigNumber(5)
   const rows = farms.reduce<FarmWithStakedValue[][]>(
@@ -48,7 +47,7 @@ const FarmCards: React.FC = () => {
               .times(SUSHI_PER_BLOCK)
               .times(BLOCKS_PER_YEAR)
               .times(stakedValue[i].poolWeight)
-              .div(stakedValue[i].totalWethValue)
+              .div(stakedValue[i].isPair?stakedValue[i].totalWethValue:stakedValue[i].tokenPriceInWeth.times(stakedValue[i].balance))
           : null,
       }
       const newFarmRows = [...farmRows]

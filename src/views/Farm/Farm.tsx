@@ -23,6 +23,7 @@ const Farm: React.FC = () => {
     earnToken,
     name,
     icon,
+    isPair,
   } = useFarm(farmId) || {
     pid: 0,
     lpToken: '',
@@ -31,6 +32,7 @@ const Farm: React.FC = () => {
     earnToken: '',
     name: '',
     icon: '',
+    isPair: false,
   }
 
   useEffect(() => {
@@ -43,6 +45,10 @@ const Farm: React.FC = () => {
   const lpContract = useMemo(() => {
     return getContract(ethereum as provider, lpTokenAddress)
   }, [ethereum, lpTokenAddress])
+
+  const tokenContract = useMemo(() => {
+    return getContract(ethereum as provider, tokenAddress)
+  }, [ethereum, tokenAddress])
 
   const { onRedeem } = useRedeem(getMasterChefContract(sushi))
 
@@ -72,6 +78,8 @@ const Farm: React.FC = () => {
               lpContract={lpContract}
               pid={pid}
               tokenName={lpToken.toUpperCase()}
+              tokenContract={tokenContract}
+              isPair={isPair}
             />
           </StyledCardWrapper>
         </StyledCardsWrapper>
