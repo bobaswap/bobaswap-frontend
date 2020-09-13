@@ -45,7 +45,7 @@ export class Contracts {
       else console.error('Contract address not found in network', networkId)
     }
 
-    setProvider(this.sushi, contractAddresses.sushi[networkId])
+    setProvider(this.sushi, contractAddresses.boba[networkId])
     setProvider(this.masterChef, contractAddresses.masterChef[networkId])
     setProvider(this.weth, contractAddresses.weth[networkId])
 

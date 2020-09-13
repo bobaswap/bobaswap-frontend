@@ -39,11 +39,11 @@ export const INTEGERS = {
 // }
 
 export const contractAddresses = {
-  sushi: {
-    1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+  boba: {
+    1: '0x2D480Bb31d4796A11D9a50eAECaBb36ffd42Bc63',
   },
   masterChef: {
-    1: '0xc2edad668740f1aa35e4d8f227fb8e17dca888cd',
+    1: '0x3f2a6f23Cdc31D9F1f8b19a4f58b6dF69C560b76',
   },
   weth: {
     1: '0xC02aaA39b223FE8D0A0e5C4F27eAD9083C756Cc2',
@@ -58,12 +58,12 @@ SLP Address on mainnet for reference
 
 export const supportedPools = [
   {
-    pid: 12,
+    pid: 110,
     lpAddresses: {
       1: '0x795065dCc9f64b5614C407a6EFDC400DA6221FB0',
     },
     tokenAddresses: {
-      1: '0x6b3595068778dd592e39a122f4f5a5cf09c90fe2',
+      1: '0x2D480Bb31d4796A11D9a50eAECaBb36ffd42Bc63',
     },
     name: 'Boba Party!',
     symbol: 'BOBA-ETH SLP',
@@ -72,9 +72,9 @@ export const supportedPools = [
     depositUrl:'https://exchange.sushiswapclassic.org/#/add/0x6b3595068778dd592e39a122f4f5a5cf09c90fe2/ETH',
   },
   {
-    pid: 0,
+    pid: 1,
     lpAddresses: {
-      1: '0x0d4a11d5eeaac28ec3f61d100daf4d40471f1852',
+      1: '0x06da0fd433c1a5d7a4faa01111c044910a184553',
     },
     tokenAddresses: {
       1: '0xdac17f958d2ee523a2206206994597c13d831ec7',
@@ -86,9 +86,9 @@ export const supportedPools = [
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xdac17f958d2ee523a2206206994597c13d831ec7/ETH',
   },
   {
-    pid: 1,
+    pid: 2,
     lpAddresses: {
-      1: '0xb4e16d0168e52d35cacd2c6185b44281ec28c9dc',
+      1: '0x397ff1542f962076d0bfe58ea045ffa2d347aca0',
     },
     tokenAddresses: {
       1: '0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48',
@@ -100,9 +100,9 @@ export const supportedPools = [
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48/ETH',
   },
   {
-    pid: 8,
+    pid: 3,
     lpAddresses: {
-      1: '0xa2107fa5b38d9bbd2c461d6edf11b11a50f6b974',
+      1: '0xc40d16476380e4037e6b1a2594caf6a6cc8da967',
     },
     tokenAddresses: {
       1: '0x514910771af9ca656af840dff83e8264ecf986ca',
@@ -116,7 +116,7 @@ export const supportedPools = [
   {
     pid: 5,
     lpAddresses: {
-      1: '0xab3f9bf1d81ddb224a2014e98b238638824bcf20',
+      1: '0x5e63360e891bd60c69445970256c260b0a6a54c6',
     },
     tokenAddresses: {
       1: '0x80fb784b7ed66730e8b1dbd9820afd29931aab03',
@@ -130,35 +130,35 @@ export const supportedPools = [
   {
     pid: 6,
     lpAddresses: {
-      1: '0x43ae24960e5534731fc831386c07755a2dc33d47',
+      1: '0xa1d7b2d891e3a1f9ef4bbc5be20630c2feb1c470',
     },
     tokenAddresses: {
       1: '0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f',
     },
-    name: 'Sync Champagne',
+    name: 'SNX Champagne',
     symbol: 'SNX-ETH SLP',
     tokenSymbol: 'SNX',
     icon: '🍾',
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f/ETH',
   },
   {
-    pid: 10,
+    pid: 4,
     lpAddresses: {
-      1: '0xc5be99a02c6857f9eac67bbce58df5572498f40c',
+      1: '0xcb2286d9471cc185281c4f763d34a962ed212962',
     },
     tokenAddresses: {
       1: '0xd46ba6d942050d489dbd938a2c909a5d5039a161',
     },
-    name: 'Ample Cocktail',
+    name: 'AMPL Martini',
     symbol: 'AMPL-ETH SLP',
     tokenSymbol: 'AMPL',
     icon: '🍸',
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xd46ba6d942050d489dbd938a2c909a5d5039a161/ETH',
   },
   {
-    pid: 11,
+    pid: 7,
     lpAddresses: {
-      1: '0x2fdbadf3c4d5a8666bc06645b8358ab803996e28',
+      1: '0x088ee5007c98a9677165d78dd2109ae4a3d04d0c',
     },
     tokenAddresses: {
       1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
@@ -170,21 +170,21 @@ export const supportedPools = [
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/ETH',
   },
   {
-    pid: 20,
+    pid: 8,
     lpAddresses: {
       1: '0x95b54c8da12bb23f7a5f6e26c38d04acc6f81820',
     },
     tokenAddresses: {
       1: '0xAba8cAc6866B83Ae4eec97DD07ED254282f6aD8A',
     },
-    name: 'YAMV2 Juice',
+    name: 'YAM Juice',
     symbol: 'YAMV2-ETH SLP',
     tokenSymbol: 'YAMV2',
     icon: '🍹',
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0xAba8cAc6866B83Ae4eec97DD07ED254282f6aD8A/ETH',
   },
   {
-    pid: 21,
+    pid: 0,
     lpAddresses: {
       1: '0x795065dcc9f64b5614c407a6efdc400da6221fb0',
     },
@@ -198,7 +198,7 @@ export const supportedPools = [
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x6B3595068778DD592e39A122f4f5a5cF09C90fE2/ETH',
   },
   {
-    pid: 24,
+    pid: 9,
     lpAddresses: {
       1: '0x715134a16acb73c86e81df5542e1cf759eeb6fc7',
     },
@@ -212,7 +212,7 @@ export const supportedPools = [
     depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x4Fabb145d64652a948d72533023f6E7A623C7C53/ETH',
   },
   {
-    pid: 22,
+    pid: 10,
     lpAddresses: {
       1: '0x56feaccb7f750b997b36a68625c7c596f0b41a58',
     },
@@ -220,13 +220,13 @@ export const supportedPools = [
       1: '0xa0246c9032bC3A600820415aE600c6388619A14D',
     },
     name: 'FARM Honey',
-    symbol: 'FARM SLP',
+    symbol: 'FARM',
     tokenSymbol: 'FARM',
     icon: '🍯',
     depositUrl: 'https://etherscan.io/address/0xa0246c9032bC3A600820415aE600c6388619A14D',
   },
   {
-    pid: 25,
+    pid: 12,
     lpAddresses: {
       1: '0xb5697ab09923e1f762c60b973b9ac7e48a89ec45',
     },
@@ -234,13 +234,13 @@ export const supportedPools = [
       1: '0xba50933c268f567bdc86e1ac131be072c6b0b71a',
     },
     name: 'ARPA Cake',
-    symbol: 'ARPA SLP',
+    symbol: 'ARPA',
     tokenSymbol: 'ARPA',
     icon: '🍰',
     depositUrl: 'https://etherscan.io/address/0xba50933c268f567bdc86e1ac131be072c6b0b71a',
   },
   {
-    pid: 26,
+    pid: 14,
     lpAddresses: {
       1: '0x8973be4402bf0a39448f419c2d64bd3591dd2299',
     },
@@ -248,13 +248,13 @@ export const supportedPools = [
       1: '0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83',
     },
     name: 'YFII Doughnut',
-    symbol: 'YFII SLP',
+    symbol: 'YFII',
     tokenSymbol: 'YFII',
     icon: '🍩',
     depositUrl: 'https://etherscan.io/address/0xa1d0E215a23d7030842FC67cE582a6aFa3CCaB83',
   },
   {
-    pid: 27,
+    pid: 13,
     lpAddresses: {
       1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
     },
@@ -262,13 +262,13 @@ export const supportedPools = [
       1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
     },
     name: 'YFI Pudding',
-    symbol: 'YFI SLP',
+    symbol: 'YFI',
     tokenSymbol: 'YFI',
     icon: '🍮',
     depositUrl: 'https://etherscan.io/address/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
   },
   {
-    pid: 28,
+    pid: 11,
     lpAddresses: {
       1: '0x17782d58c715aa2a4458d5fb1c1d8e52a69a62fc',
     },
@@ -276,13 +276,13 @@ export const supportedPools = [
       1: '0x75231f58b43240c9718dd58b4967c5114342a86c',
     },
     name: 'OKB Candy',
-    symbol: 'OKB SLP',
+    symbol: 'OKB',
     tokenSymbol: 'OKB',
     icon: '🍭',
     depositUrl: 'https://etherscan.io/address/0x75231f58b43240c9718dd58b4967c5114342a86c',
   },
   {
-    pid: 29,
+    pid: 15,
     lpAddresses: {
       1: '0xc139d8450177c0b8c3788608518687b585f7ae5a',
     },
@@ -290,7 +290,7 @@ export const supportedPools = [
       1: '0xb8baa0e4287890a5f79863ab62b7f175cecbd433',
     },
     name: 'SWRV Chocolate',
-    symbol: 'SWRV SLP',
+    symbol: 'SWRV',
     tokenSymbol: 'SWRV',
     icon: '🍫',
     depositUrl: 'https://etherscan.io/address/0xb8baa0e4287890a5f79863ab62b7f175cecbd433',

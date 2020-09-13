@@ -43,6 +43,7 @@ export const getFarms = (sushi) => {
           tokenContract,
           lpAddress,
           lpContract,
+          depositUrl
         }) => ({
           pid,
           id: symbol,
@@ -56,6 +57,7 @@ export const getFarms = (sushi) => {
           earnToken: 'BOBA',
           earnTokenAddress: sushi.contracts.sushi.options.address,
           icon,
+          depositUrl
         }),
       )
     : []
@@ -70,7 +72,7 @@ export const getPoolWeight = async (masterChefContract, pid) => {
 }
 
 export const getEarned = async (masterChefContract, pid, account) => {
-  return masterChefContract.methods.pendingSushi(pid, account).call()
+  return masterChefContract.methods.pendingBoba(pid, account).call()
 }
 
 export const getTotalLPWethValue = async (
@@ -166,6 +168,10 @@ export const getStaked = async (masterChefContract, pid, account) => {
     const { amount } = await masterChefContract.methods
       .userInfo(pid, account)
       .call()
+      // .userInfo(pid, account)
+    console.log("master",masterChefContract)
+    console.log("pid",pid)
+    console.log("paccount",account)
     return new BigNumber(amount)
   } catch {
     return new BigNumber(0)

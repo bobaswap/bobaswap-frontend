@@ -134,7 +134,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
-              <a href={'https://exchange.sushiswapclassic.org/#/add/'+farm.tokenAddress+'/ETH'} target='_blank'><StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail></a>
+              <a href={farm.depositUrl} target='_blank'><StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail></a>
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />
