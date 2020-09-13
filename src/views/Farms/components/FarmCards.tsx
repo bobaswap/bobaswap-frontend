@@ -37,7 +37,7 @@ const FarmCards: React.FC = () => {
       : new BigNumber(0)
 
   const BLOCKS_PER_YEAR = new BigNumber(2336000)
-  const SUSHI_PER_BLOCK = new BigNumber(1000)
+  const SUSHI_PER_BLOCK = new BigNumber(2.5)
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
       const farmWithStakedValue = {
@@ -134,7 +134,7 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
             <CardIcon>{farm.icon}</CardIcon>
             <StyledTitle>{farm.name}</StyledTitle>
             <StyledDetails>
-              <a href="https://sushiswapclassic.org/farms" target='_blank'><StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail></a>
+              <a href={'https://exchange.sushiswapclassic.org/#/add/'+farm.tokenAddress+'/ETH'} target='_blank'><StyledDetail>Deposit {farm.lpToken.toUpperCase()}</StyledDetail></a>
               <StyledDetail>Earn {farm.earnToken.toUpperCase()}</StyledDetail>
             </StyledDetails>
             <Spacer />

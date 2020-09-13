@@ -14,7 +14,7 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={chef} height={120} />}
         title="Boba Shop Now Open"
-        subtitle="Stake SushiSwap LP tokens for your fav beverage!"
+        subtitle="Stake SushiSwap LP tokens for your fav beverage and food!"
       />
 
       <Container>
