@@ -10,8 +10,6 @@ import Spacer from '../../../components/Spacer'
 import Value from '../../../components/Value'
 import SushiIcon from '../../../components/SushiIcon'
 import useAllEarnings from '../../../hooks/useAllEarnings'
-import useAllStakedValue from '../../../hooks/useAllStakedValue'
-import useFarms from '../../../hooks/useFarms'
 import useTokenBalance from '../../../hooks/useTokenBalance'
 import useSushi from '../../../hooks/useSushi'
 import { getSushiAddress, getSushiSupply } from '../../../sushi/utils'
@@ -28,16 +26,6 @@ const PendingRewards: React.FC = () => {
     sumEarning += new BigNumber(earning)
       .div(new BigNumber(10).pow(18))
       .toNumber()
-  }
-
-  const [farms] = useFarms()
-  const allStakedValue = useAllStakedValue()
-
-  if (allStakedValue && allStakedValue.length) {
-    const sumWeth = farms.reduce(
-      (c, { id }, i) => c + (allStakedValue[i].totalWethValue.toNumber() || 0),
-      0,
-    )
   }
 
   useEffect(() => {
@@ -75,6 +63,8 @@ const Balances: React.FC = () => {
   const sushiBalance = useTokenBalance(getSushiAddress(sushi))
   const { account, ethereum }: { account: any; ethereum: any } = useWallet()
 
+  
+
   useEffect(() => {
     async function fetchTotalSupply() {
       const supply = await getSushiSupply(sushi)
@@ -110,7 +100,6 @@ const Balances: React.FC = () => {
         </Footnote>
       </Card>
       <Spacer />
-
       <Card>
         <CardContent>
           <Label text="Total BOBA Supply" />
@@ -123,7 +112,8 @@ const Balances: React.FC = () => {
           <FootnoteValue>5 BOBA</FootnoteValue>
         </Footnote>
       </Card>
-    </StyledWrapper>
+      </StyledWrapper>
+
   )
 }
 

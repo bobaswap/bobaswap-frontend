@@ -7,6 +7,7 @@ import Page from '../../components/Page'
 import PageHeader from '../../components/PageHeader'
 import Spacer from '../../components/Spacer'
 import Balances from './components/Balances'
+import PlatformStats from './components/PlatFormStats'
 
 const Home: React.FC = () => {
   return (
@@ -14,11 +15,13 @@ const Home: React.FC = () => {
       <PageHeader
         icon={<img src={chef} height={120} />}
         title="Boba Shop Now Open"
-        subtitle="Stake SushiSwap LP tokens for your fav beverage and dessert!"
+        subtitle="Supply Capped at 1 Million BOBA, Halving Every 100,000 Blocks"
       />
 
       <Container>
         <Balances />
+        <br />
+        <PlatformStats />
       </Container>
       <Spacer size="lg" />
       {/* <StyledInfo>
