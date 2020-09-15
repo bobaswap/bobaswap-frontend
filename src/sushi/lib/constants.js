@@ -80,7 +80,7 @@ export const supportedPools = [
     tokenAddresses: {
       1: '0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14',
     },
-    name: 'Bella Bourbon',
+    name: 'Bella Ciao',
     symbol: 'BEL',
     tokenSymbol: 'BEL',
     icon: '🥂',
