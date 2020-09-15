@@ -73,6 +73,21 @@ export const supportedPools = [
     isPair : true,
   },
   {
+    pid: 17,
+    lpAddresses: {
+      1: '0x9e98deac1a416c9ce3c892bd8eef586f1291ca35',
+    },
+    tokenAddresses: {
+      1: '0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14',
+    },
+    name: 'Bella Bourbon',
+    symbol: 'BEL',
+    tokenSymbol: 'BEL',
+    icon: '🥂',
+    depositUrl:'https://etherscan.io/address/0xa91ac63d040deb1b7a5e4d4134ad23eb0ba07e14',
+    isPair : false,
+  },
+  {
     pid: 1,
     lpAddresses: {
       1: '0x06da0fd433c1a5d7a4faa01111c044910a184553',
