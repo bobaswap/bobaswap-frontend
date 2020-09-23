@@ -96,6 +96,82 @@ export const supportedPools = [
     isDirectPair : false,
   },
   {
+    pid: 18,
+    lpAddresses: {
+      1: '0x364df315b933e7adb717a34f17e7fe0c90cd7549',
+    },
+    tokenAddresses: {
+      1: '0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7',
+    },
+    tokenLpAddresses: {
+      1: '0x364df315b933e7adb717a34f17e7fe0c90cd7549',
+    },
+    name: 'Boba Party II!',
+    symbol: 'BOBA-ETH LP',
+    tokenSymbol: 'BOBA',
+    icon: '🥤',
+    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xce9afaf5b0da6ce0366ab40435a48ccff65d2ed7',
+    isPair : true,
+    isDirectPair : false,
+  },
+  {
+    pid: 19,
+    lpAddresses: {
+      1: '0x9fe2d6a491c03da7f372025d11090152874fad34',
+    },
+    tokenAddresses: {
+      1: '0xba50933c268f567bdc86e1ac131be072c6b0b71a',
+    },
+    tokenLpAddresses: {
+      1: '0xb5697ab09923e1f762c60b973b9ac7e48a89ec45',
+    },
+    name: 'Boba Party III!',
+    symbol: 'BOBA-ARPA LP',
+    tokenSymbol: 'BOBA',
+    icon: '🥤',
+    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=0xba50933c268f567bdc86e1ac131be072c6b0b71a&outputCurrency=0xce9afaf5b0da6ce0366ab40435a48ccff65d2ed7',
+    isPair : true,
+    isDirectPair : true,
+  },
+  {
+    pid: 20,
+    lpAddresses: {
+      1: '0x359c138b1666aa2167aafc205a841ff432a23040',
+    },
+    tokenAddresses: {
+      1: '0xe66747a101bff2dba3697199dcce5b743b454759',
+    },
+    tokenLpAddresses: {
+      1: '0x359c138b1666aa2167aafc205a841ff432a23040',
+    },
+    name: 'GT Rice',
+    symbol: 'GT-ETH LP',
+    tokenSymbol: 'BOBA',
+    icon: '🍛',
+    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xe66747a101bff2dba3697199dcce5b743b454759',
+    isPair : true,
+    isDirectPair : false,
+  },
+  {
+    pid: 21,
+    lpAddresses: {
+      1: '0xdf4aa141031e85468137ed125749c4f6a57f8f5b',
+    },
+    tokenAddresses: {
+      1: '0x11eef04c884e24d9b7b4760e7476d06ddf797f36',
+    },
+    tokenLpAddresses: {
+      1: '0xdf4aa141031e85468137ed125749c4f6a57f8f5b',
+    },
+    name: 'MX Pie',
+    symbol: 'MX-ETH LP',
+    tokenSymbol: 'BOBA',
+    icon: '🥧',
+    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=0x11eef04c884e24d9b7b4760e7476d06ddf797f36&outputCurrency=ETH',
+    isPair : true,
+    isDirectPair : false,
+  },
+  {
     pid: 1,
     lpAddresses: {
       1: '0x06da0fd433c1a5d7a4faa01111c044910a184553',
@@ -234,82 +310,6 @@ export const supportedPools = [
   
 
 
-  {
-    pid: 18,
-    lpAddresses: {
-      1: '0x364df315b933e7adb717a34f17e7fe0c90cd7549',
-    },
-    tokenAddresses: {
-      1: '0xce9aFAF5b0dA6cE0366aB40435A48ccff65d2ED7',
-    },
-    tokenLpAddresses: {
-      1: '0x364df315b933e7adb717a34f17e7fe0c90cd7549',
-    },
-    name: 'Boba Party II!',
-    symbol: 'BOBA-ETH LP',
-    tokenSymbol: 'BOBA',
-    icon: '🥤',
-    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xce9afaf5b0da6ce0366ab40435a48ccff65d2ed7',
-    isPair : true,
-    isDirectPair : false,
-  },
-  {
-    pid: 19,
-    lpAddresses: {
-      1: '0x9fe2d6a491c03da7f372025d11090152874fad34',
-    },
-    tokenAddresses: {
-      1: '0xba50933c268f567bdc86e1ac131be072c6b0b71a',
-    },
-    tokenLpAddresses: {
-      1: '0xb5697ab09923e1f762c60b973b9ac7e48a89ec45',
-    },
-    name: 'Boba Party III!',
-    symbol: 'BOBA-ARPA LP',
-    tokenSymbol: 'BOBA',
-    icon: '🥤',
-    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=0xba50933c268f567bdc86e1ac131be072c6b0b71a&outputCurrency=0xce9afaf5b0da6ce0366ab40435a48ccff65d2ed7',
-    isPair : true,
-    isDirectPair : true,
-  },
-  {
-    pid: 20,
-    lpAddresses: {
-      1: '0x359c138b1666aa2167aafc205a841ff432a23040',
-    },
-    tokenAddresses: {
-      1: '0xe66747a101bff2dba3697199dcce5b743b454759',
-    },
-    tokenLpAddresses: {
-      1: '0x359c138b1666aa2167aafc205a841ff432a23040',
-    },
-    name: 'GT Rice',
-    symbol: 'GT-ETH LP',
-    tokenSymbol: 'BOBA',
-    icon: '🍛',
-    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xe66747a101bff2dba3697199dcce5b743b454759',
-    isPair : true,
-    isDirectPair : false,
-  },
-  {
-    pid: 21,
-    lpAddresses: {
-      1: '0xdf4aa141031e85468137ed125749c4f6a57f8f5b',
-    },
-    tokenAddresses: {
-      1: '0x11eef04c884e24d9b7b4760e7476d06ddf797f36',
-    },
-    tokenLpAddresses: {
-      1: '0xdf4aa141031e85468137ed125749c4f6a57f8f5b',
-    },
-    name: 'MX Pie',
-    symbol: 'MX-ETH LP',
-    tokenSymbol: 'BOBA',
-    icon: '🥧',
-    depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=0x11eef04c884e24d9b7b4760e7476d06ddf797f36&outputCurrency=ETH',
-    isPair : true,
-    isDirectPair : false,
-  },
 
   {
     pid: 0,
