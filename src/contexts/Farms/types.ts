@@ -6,6 +6,7 @@ export interface Farm {
   lpToken: string
   lpTokenAddress: string
   lpContract: Contract
+  tokenLpContract: Contract
   tokenAddress: string
   earnToken: string
   earnTokenAddress: string
@@ -14,6 +15,7 @@ export interface Farm {
   tokenSymbol: string
   depositUrl: string
   isPair : boolean
+  isDirectPair : boolean
 }
 
 export interface FarmsContext {

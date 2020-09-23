@@ -47,7 +47,7 @@ const FarmCards: React.FC = () => {
               .times(SUSHI_PER_BLOCK)
               .times(BLOCKS_PER_YEAR)
               .times(stakedValue[i].poolWeight)
-              .div(stakedValue[i].isPair?stakedValue[i].totalWethValue:stakedValue[i].tokenPriceInWeth.times(stakedValue[i].balance))
+              .div(stakedValue[i].totalWethValue)
           : null,
       }
       const newFarmRows = [...farmRows]

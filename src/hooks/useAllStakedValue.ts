@@ -22,6 +22,7 @@ export interface StakedValue {
   poolWeight: BigNumber
   balance: BigNumber
   isPair: boolean
+  isDirectPair: boolean
 }
 
 const useAllStakedValue = () => {
@@ -40,21 +41,28 @@ const useAllStakedValue = () => {
           pid,
           lpContract,
           tokenContract,
+          tokenLpContract,
           isPair,
+          isDirectPair,
         }: {
           pid: number
           lpContract: Contract
           tokenContract: Contract
+          tokenLpContract: Contract
           isPair: boolean
+          isDirectPair: boolean
         }) =>
           getTotalLPWethValue(
             masterChefContract,
             wethContact,
             lpContract,
             tokenContract,
+            tokenLpContract,
             pid,
             isPair,
+            isDirectPair,
           ),
+          
       ),
     )
 

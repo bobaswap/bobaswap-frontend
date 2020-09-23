@@ -30,6 +30,9 @@ interface StakeProps {
 }
 
 const Stake: React.FC<StakeProps> = ({ lpContract, tokenContract, pid, tokenName ,isPair}) => {
+  var bannedPidList=[0,4,5,6,7,8,9,10,15]
+  const isBanned = bannedPidList.includes(pid)
+
   const [requestedApproval, setRequestedApproval] = useState(false)
 
   const allowance = useAllowance(isPair?lpContract:tokenContract)
@@ -82,7 +85,7 @@ const Stake: React.FC<StakeProps> = ({ lpContract, tokenContract, pid, tokenName
           <StyledCardActions>
             {!allowance.toNumber() ? (
               <Button
-                disabled={requestedApproval}
+                disabled={requestedApproval||isBanned}
                 onClick={handleApprove}
                 text={`Approve ${tokenName}`}
               />
@@ -94,7 +97,9 @@ const Stake: React.FC<StakeProps> = ({ lpContract, tokenContract, pid, tokenName
                   onClick={onPresentWithdraw}
                 />
                 <StyledActionSpacer />
-                <IconButton onClick={onPresentDeposit}>
+                <IconButton 
+                  disabled={isBanned}
+                  onClick={onPresentDeposit}>
                   <AddIcon />
                 </IconButton>
               </>
