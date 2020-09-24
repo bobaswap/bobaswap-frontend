@@ -39,16 +39,21 @@ const FarmCards: React.FC = () => {
   const SUSHI_PER_BLOCK = new BigNumber(5)
   const rows = farms.reduce<FarmWithStakedValue[][]>(
     (farmRows, farm, i) => {
+      let apyTmp=null
+      if(stakedValue[i]){
+        apyTmp=sushiPrice
+        .times(SUSHI_PER_BLOCK)
+        .times(BLOCKS_PER_YEAR)
+        .times(stakedValue[i].poolWeight)
+        .div(stakedValue[i].totalWethValue)
+        if(isNaN(apyTmp.toNumber())){
+          apyTmp=new BigNumber(0)
+        }
+      }
       const farmWithStakedValue = {
         ...farm,
         ...stakedValue[i],
-        apy: stakedValue[i]
-          ? sushiPrice
-              .times(SUSHI_PER_BLOCK)
-              .times(BLOCKS_PER_YEAR)
-              .times(stakedValue[i].poolWeight)
-              .div(stakedValue[i].totalWethValue)
-          : null,
+        apy: apyTmp,
       }
       const newFarmRows = [...farmRows]
       if (newFarmRows[newFarmRows.length - 1].length === 3) {
@@ -154,11 +159,12 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm }) => {
               <span>APY</span>
               <span>
                 {farm.apy
-                  ? `${farm.apy
-                      .times(new BigNumber(100))
-                      .toNumber()
-                      .toLocaleString('en-US')
-                      .slice(0, -1)}%`
+                  ? `${(Math.floor(farm.apy
+                    .times(new BigNumber(100))
+                    .toNumber() * 100) / 100)
+                    .toLocaleString('en-US')
+                      // .slice(0, -1)
+                    }%`
                   : 'Loading ...'}
               </span>
               {/* <span>

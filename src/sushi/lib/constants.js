@@ -146,7 +146,7 @@ export const supportedPools = [
     },
     name: 'GT Rice',
     symbol: 'GT-ETH LP',
-    tokenSymbol: 'BOBA',
+    tokenSymbol: 'GT',
     icon: '🍛',
     depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0xe66747a101bff2dba3697199dcce5b743b454759',
     isPair : true,
@@ -165,7 +165,7 @@ export const supportedPools = [
     },
     name: 'MX Pie',
     symbol: 'MX-ETH LP',
-    tokenSymbol: 'BOBA',
+    tokenSymbol: 'MX',
     icon: '🥧',
     depositUrl:'https://app.uniswap.org/#/swap?inputCurrency=0x11eef04c884e24d9b7b4760e7476d06ddf797f36&outputCurrency=ETH',
     isPair : true,
@@ -210,25 +210,24 @@ export const supportedPools = [
     isDirectPair : false,
   },
   {
-    pid: 3,
+    pid: 7,
     lpAddresses: {
-      1: '0xc40d16476380e4037e6b1a2594caf6a6cc8da967',
+      1: '0x088ee5007c98a9677165d78dd2109ae4a3d04d0c',
     },
     tokenAddresses: {
-      1: '0x514910771af9ca656af840dff83e8264ecf986ca',
+      1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
     },
     tokenLpAddresses: {
-      1: '0xc40d16476380e4037e6b1a2594caf6a6cc8da967',
+      1: '0x088ee5007c98a9677165d78dd2109ae4a3d04d0c',
     },
-    name: 'LINK Beer',
-    symbol: 'LINK-ETH SLP',
-    tokenSymbol: 'LINK',
-    icon: '🍺',
-    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x514910771af9ca656af840dff83e8264ecf986ca/ETH',
+    name: 'YFI Sake',
+    symbol: 'YFI-ETH SLP',
+    tokenSymbol: 'YFI',
+    icon: '🍶',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/ETH',
     isPair : true,
     isDirectPair : false,
   },
-  
   
   
   {
@@ -330,7 +329,25 @@ export const supportedPools = [
     isPair : true,
     isDirectPair : false,
   },
-
+  {
+    pid: 3,
+    lpAddresses: {
+      1: '0xc40d16476380e4037e6b1a2594caf6a6cc8da967',
+    },
+    tokenAddresses: {
+      1: '0x514910771af9ca656af840dff83e8264ecf986ca',
+    },
+    tokenLpAddresses: {
+      1: '0xc40d16476380e4037e6b1a2594caf6a6cc8da967',
+    },
+    name: 'LINK Beer',
+    symbol: 'LINK-ETH SLP',
+    tokenSymbol: 'LINK',
+    icon: '🍺',
+    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x514910771af9ca656af840dff83e8264ecf986ca/ETH',
+    isPair : true,
+    isDirectPair : false,
+  },
   {
     pid: 5,
     lpAddresses: {
@@ -388,25 +405,7 @@ export const supportedPools = [
     isPair : true,
     isDirectPair : false,
   },
-  {
-    pid: 7,
-    lpAddresses: {
-      1: '0x088ee5007c98a9677165d78dd2109ae4a3d04d0c',
-    },
-    tokenAddresses: {
-      1: '0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e',
-    },
-    tokenLpAddresses: {
-      1: '0x088ee5007c98a9677165d78dd2109ae4a3d04d0c',
-    },
-    name: 'YFI Sake',
-    symbol: 'YFI-ETH SLP',
-    tokenSymbol: 'YFI',
-    icon: '🍶',
-    depositUrl: 'https://exchange.sushiswapclassic.org/#/add/0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e/ETH',
-    isPair : true,
-    isDirectPair : false,
-  },
+  
   {
     pid: 8,
     lpAddresses: {

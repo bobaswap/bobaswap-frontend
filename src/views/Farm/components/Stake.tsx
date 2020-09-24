@@ -30,7 +30,7 @@ interface StakeProps {
 }
 
 const Stake: React.FC<StakeProps> = ({ lpContract, tokenContract, pid, tokenName ,isPair}) => {
-  var bannedPidList=[0,4,5,6,7,8,9,10,15]
+  var bannedPidList=[0,4,5,6,3,8,9,10,15]
   const isBanned = bannedPidList.includes(pid)
 
   const [requestedApproval, setRequestedApproval] = useState(false)
